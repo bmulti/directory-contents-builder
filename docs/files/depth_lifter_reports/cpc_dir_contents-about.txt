@@ -1,0 +1,70 @@
+Python Code Depth Lifter 4.7
+Dissect a python file
+project: Python
+
+Folders in use
+    Settings   \\192.168.1.10\shared\cc_lib\_pub\cpc_depth_lifter\cc_depth_lifter.json
+    Reports    X:\cc_lib\_pub\cpc_dir_contents\depth_lifter_reports
+    Backups    \\192.168.1.10\shared\cc_lib\_pub\cpc_depth_lifter\backups
+    Crash log  \\192.168.1.10\shared\cc_lib\_pub\cpc_depth_lifter\depth_lifter.log
+
+File        cpc_dir_contents.py
+Modified    2026-11-21 09:10:24
+Encoding    UTF-8
+Line ends   LF (Unix, GitHub)
+
+Cautions
+    Caution 14 of 23 imports do not name the source file at the call: from pathlib import Path, from datetime import datetime, from pathlib import Path, from tkinter import filedialog, from tkinter import messagebox, from tkinter import ttk ...
+
+Statistics
+    Lines                         921   (code 772, comments 25, blank 124)
+    Classes                       1
+    Functions and methods         40   (module level 6, methods 34, nested 0, async 0)
+    Deepest nesting               1
+    Function length (lines)       average 17.9   median 10.5   shortest 2 (_save_config_dict)   longest 71 (_build_directory_tab)
+    Longest functions             _build_directory_tab 71, _build_local_ui_tab 69, __init__ 57, _build_config_tab 41, refresh 39
+    Over 50 lines                 3   (_build_directory_tab, _build_local_ui_tab, __init__)
+    Parameters per function       average 0.8   most 4 (__init__)
+    With a docstring              6 of 40   (15%)   module docstring: no
+    With a return type            0 of 40   (0%)
+    Decorated                     0
+    Variables                     module 12, class 0, self attributes 27, in functions 62
+    Call sites                    358   (182 distinct callees)
+
+Imports
+    23 imports: 9 by module or alias, 14 by bare name, 0 star
+    The source file is named at the call for 39% of them
+
+Named by module or alias (good: a call reads os.path.join or np.array, so the source shows)
+    import sys                                     standard library               line 77    used 4x
+    import argparse                                standard library               line 89    used 1x
+    import json                                    standard library               line 90    used 2x
+    import os                                      standard library               line 91    used 2x
+    import subprocess                              standard library               line 92    used 2x
+    import sys                                     standard library               line 93    used 4x
+    import tkinter as tk                           standard library               line 94    used 12x
+    import cpc_ui_choices as ui_choices            third party or your own file   line 118   used 2x
+    import cpc_notes                               third party or your own file   line 273   used 1x
+
+Bare names (a call reads Path(...) and does not say it came from pathlib;
+prefer: import pathlib, then pathlib.Path(...), or import pathlib as pl)
+    from pathlib import Path                       standard library               line 76    used 7x
+    from datetime import datetime                  standard library               line 95    used 1x
+    from pathlib import Path                       standard library               line 96    used 7x
+    from tkinter import filedialog                 standard library               line 97    used 2x
+    from tkinter import messagebox                 standard library               line 97    used 5x
+    from tkinter import ttk                        standard library               line 97    used 39x
+    from cpc_ui_theme import apply_app_icon        third party or your own file   line 107   used 1x
+    from cpc_ui_theme import apply_theme           third party or your own file   line 107   used 2x
+    from cpc_ui_theme import density_names         third party or your own file   line 107   used 1x
+    from cpc_ui_theme import normalize_density_name third party or your own file   line 107   used 2x
+    from cpc_ui_theme import normalize_theme_name  third party or your own file   line 107   used 2x
+    from cpc_ui_theme import theme_names           third party or your own file   line 107   used 1x
+    from cpc_ui_theme import theme_palette         third party or your own file   line 107   used 3x
+    from gateway_controller import GatewayController third party or your own file   line 124   used 2x
+
+Star imports (names cannot be traced to a file)
+    none
+
+Imported but never used (may be re-exported)
+    none

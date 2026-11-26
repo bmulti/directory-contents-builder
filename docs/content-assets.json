@@ -1,0 +1,17 @@
+{
+  "splash": "images/splash-cpc-dir-contents-splash.webp",
+  "poster": "images/poster-cpc-dir-contents-poster.webp",
+  "logo": "images/logo-logo.webp",
+  "favicon": "images/favicon-icon.png",
+  "poster:0": "images/poster-cpc-dir-contents-poster.webp",
+  "inventory-shot:0": "images/005-cpc-dir-contents-directory-contents-about-details.webp",
+  "inventory-shot:1": "images/006-cpc-dir-contents-directory-contents-about-overview.webp",
+  "inventory-shot:2": "images/007-cpc-dir-contents-directory-contents-config.webp",
+  "inventory-shot:3": "images/008-cpc-dir-contents-directory-contents-directory.webp",
+  "inventory-shot:4": "images/009-cpc-dir-contents-directory-contents-gateway-all-3.webp",
+  "inventory-shot:5": "images/010-cpc-dir-contents-directory-contents-gateway-details.webp",
+  "inventory-shot:6": "images/011-cpc-dir-contents-directory-contents-gateway-edit-json.webp",
+  "inventory-shot:7": "images/012-cpc-dir-contents-directory-contents-gateway-unsorted-3.webp",
+  "inventory-shot:8": "images/013-cpc-dir-contents-directory-contents-notes.webp",
+  "inventory-shot:9": "images/014-cpc-dir-contents-directory-contents-ui-choices.webp"
+}

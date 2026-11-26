@@ -1,0 +1,129 @@
+source_file = cpc_dir_contents.py
+source_modified = 2026-11-21 09:10:24
+name: annotation = value    line numbers   (functions: name() with their variables indented; classes: first-last)
+
+APP_DIR = Path(__file__).resolve().parent    131
+APP_NAME = 'Directory Contents'    129
+APP_VERSION = '2026-09-12'    130
+CONFIG_PATH = APP_DIR / 'dir_contents.json'    132
+DEFAULT_CONFIG = {'ui_theme_name': 'Light Blue', 'ui_density': 'No…    134
+description = 'Base Dir Explore'    8, 86
+GatewayController = None    126
+named = 'Dir Contents'    9, 84
+project = 'Util'    7, 87
+shared_path = Path(__file__).resolve().parent.parent    79
+ui_choices = None    120
+version = '12'    6, 85
+_deep_merge()
+    key
+    result
+    value
+attach()
+    context
+    initial_directory
+load_config()
+    cfg
+    loaded
+main()
+    args
+    root
+parse_args()
+    parser
+save_config()
+    temp
+class DirectoryContents    187-880
+    self.cfg = load_config()    207
+    self.colors = dict(self.host_context.get('colors') or theme_pal…    438, 444, 450, 820, 826
+    self.config_tab = ttk.Frame(self.notebook)    255
+    self.count_var = tk.StringVar(value='0 files')    298
+    self.current_directory = None    208, 569
+    self.density_var = self.ui_choices_controller.density_var    408, 483
+    self.directory_tab = ttk.Frame(self.notebook)    254
+    self.embedded = bool(embedded or not isinstance(master, (tk.Tk, t…    191
+    self.gateway_controller = GatewayController(self.gateway_tab, app_title=APP…    536
+    self.gateway_tab = ttk.Frame(self.notebook)    257
+    self.height_var = self.ui_choices_controller.window_height_var    410, 507
+    self.host_context = host_context or {}    194
+    self.last_dir_var = tk.StringVar(value=str(self.cfg.get('last_directo…    374
+    self.notebook = ttk.Notebook(self)    250
+    self.refresh_notes = cpc_notes.attach(self.notebook, 'cpc_dir_contents…    274
+    self.rows = []    209, 625
+    self.show_gateway = True if not self.embedded else bool(self.host_con…    195
+    self.show_ui_choices = True if not self.embedded else bool(self.host_con…    199
+    self.sort_column = str(self.cfg.get('sort_column', 'date') or 'date')    211, 672
+    self.sort_reverse = bool(self.cfg.get('sort_reverse', True))    212, 670, 673
+    self.status_var = tk.StringVar(value='Ready')    342
+    self.theme_var = self.ui_choices_controller.theme_var    407, 469
+    self.tree = ttk.Treeview(body, columns=('date', 'name', 'ext'…    306
+    self.ui_choices_controller = ui_choices.attach(self.ui_tab, window=self.window…    396, 413
+    self.ui_tab = ttk.Frame(self.notebook)    256
+    self.width_var = self.ui_choices_controller.window_width_var    409, 497
+    self.window = master.winfo_toplevel()    203
+    __init__()
+        height
+        requested
+        width
+    _apply_selected_theme()
+        density
+        height
+        theme
+        width
+    _build_config_tab()
+        config_var
+        frame
+    _build_directory_tab()
+        body
+        headings
+        key
+        label
+        top
+        xbar
+        ybar
+    _build_local_ui_tab()
+        frame
+    _companion_candidates()
+        candidate
+        key
+        root
+        roots
+        seen
+        suffix
+    _config_browse()
+        chosen
+    _launch_companion()
+        candidate
+        python_cmd
+    _load_config_directory()
+        value
+    _render_rows()
+        date_text
+        idx
+        iid
+        key
+        ordered
+        reverse
+        row
+        sort_key
+    _restore_tab()
+        tab_id
+        wanted
+    _use_current_size()
+        target
+    choose_directory()
+        chosen
+    copy_file_names()
+        names
+        text
+    load_directory()
+        path
+    open_selected()
+        iid
+        path
+        selected
+        tags
+    refresh()
+        modified
+        path
+        rows
+        size
+        stat

@@ -1,0 +1,45 @@
+source_file = cpc_dir_contents.py
+source_modified = 2026-11-21 09:10:24
+name(parameters) -> return  [decorators]    first line   (classes: first-last)
+
+_deep_merge(base, update)    146
+attach(parent, context=None)    883
+load_config()    156
+main(argv=None)    912
+parse_args(argv=None)    900
+save_config(cfg)    174
+class DirectoryContents(tk.Frame)    187-880
+    __init__(self, master, initial_directory=None, embedded=False, host_context=None)    188
+    _apply_selected_theme(self, theme=None, density=None, _config=None)    421
+    _apply_theme(self)    818
+    _build_config_tab(self)    350
+    _build_directory_tab(self)    278
+    _build_gateway_tab(self)    526
+    _build_local_ui_tab(self)    456
+    _build_ui(self)    249
+    _build_ui_tab(self)    392
+    _companion_candidates(self, stem)    702
+    _config_browse(self)    796
+    _launch_companion(self, stem, argument)    719
+    _load_config_directory(self)    803
+    _mousewheel(self, event)    787
+    _on_close(self)    877
+    _render_rows(self)    630
+    _restore_tab(self)    849
+    _save_config_dict(self, _config=None)    418
+    _set_status(self, message)    845
+    _set_title(self)    837
+    _tab_changed(self, _event=None)    856
+    _use_current_size(self)    808
+    apply_ui_choices(self, theme=None, density=None, _config=None)    814
+    choose_directory(self)    676
+    copy_file_names(self)    687
+    load_directory(self, directory, quiet=False)    551
+    navigate(self, directory)    586
+    open_directory(self, directory)    582
+    open_folder(self)    779
+    open_selected(self, _event=None)    745
+    refresh(self)    590
+    set_directory(self, directory)    578
+    shutdown(self)    864
+    sort_by(self, column)    668
